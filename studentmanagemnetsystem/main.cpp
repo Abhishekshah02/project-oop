@@ -86,7 +86,7 @@ void Student::insert()
     cin >> phone_no;
     cout << "Enter Email ID: ";
     cin >> email_id;
-    file.open("student.txt", ios::app | ios::out);
+    file.open("student1.txt", ios::app | ios::out);
     file << " " << name << " " << roll_no << " " << semester << " " << phone_no << " " << email_id;
     file.close();
     cout<<"Do you want to insert the data of more student(Y/N): ";
@@ -133,7 +133,7 @@ void Student::search()
     int found = 0;
     cout << "Enter the roll of the Student: ";
     cin >> roll;
-    file.open("student.txt", ios::in);
+    file.open("student1.txt", ios::in);
     file >> name >> roll_no >> semester >> phone_no >> email_id;
     while (!file.eof())
     {
@@ -151,7 +151,7 @@ void Student::search()
     }
     if (found == 0)
     {
-        cout << "\n\t\t\t   Invalid roll no. ";
+        cout << "\n\t\t\t   Invalid roll no.  \n ";
     }
 
     file.close();
