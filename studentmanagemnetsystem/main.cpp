@@ -111,7 +111,7 @@ void Student ::display()
     cout << "        ___________________________\n";
     cout << "           |STUDENT RECORD TABLE|  \n";
     cout << "       ___________________________\n";
-    file.open("student.txt", ios::in);
+    file.open("student1.txt", ios::in);
     file >> name >> roll_no >> semester >> phone_no >> email_id;
     while (!file.eof())
     {
