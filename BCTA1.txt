@@ -11,21 +11,21 @@ Phone number:
 Email:
 
 
-Name:
+Name: Aadrash karn
 Roll no:ACE078BCT003
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Abhishu khanal
 Roll no:ACE078BCT004
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name: Aaditya joshi
 Roll no:ACE078BCT005
 Semester:III
 Phone number:
@@ -33,140 +33,140 @@ Email:
 
 
 
-Name:
+Name:Aditya pandit
 Roll no:ACE078BCT006
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Ajita kharel
 Roll no:ACE078BCT007
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Alish Upreti
 Roll no:ACE078BCT008
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Alisha shah
 Roll no:ACE078BCT009
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Anil yadav
 Roll no: ACE078BCT010
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Anup joshi
 Roll no:ACE078BCT011
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Arjun Kunwar
 Roll no:ACE078BCT012
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Arpan poudel
 Roll no:ACE078BCT013
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Aryan  Kafle
 Roll no:ACE078BCT014
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name: Ashim tiwari
 Roll no:ACE078BCT015
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Ashutosh bikram thakur
 Roll no:ACE078BCT016
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Asim  Basnet
 Roll no:ACE078BCT0016
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Ayush Man Shrestha
 Roll no:ACE078BCT017
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Bibek  Acharya
 Roll no:ACE078BCT018
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Bibek Bhakta Shrestha
 Roll no:ACE078BCT019
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Bikash  Chaudhary
 Roll no:ACE078BCT020
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Bikesh  Sedhain
 Roll no:ACE078BCT021
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Bikrant  Budhathoki
 Roll no:ACE078BCT022
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Chirayu  Prasai
 Roll no:ACE078BCT023
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Dev Kumar Karmacharya
 Roll no:ACE078BCT024
 Semester:III
 Phone number:
@@ -181,175 +181,162 @@ Email:
 
 
 
-Name:
+Name:Dibya Krishna Adhikari
 Roll no:ACE078BCT026
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Elis  Poudel
 Roll no:ACE078BCT027
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Elis  Poudel
 Roll no:ACE078BCT028
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Isha  Shah
+Jatan Babu Kapri
 Roll no: ACE078BCT029
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Jatan Babu Kapri
 Roll no:ACE078BCT030
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Joshan  Adhikari
 Roll no:ACE078BCT031
 Semester:III
 Phone number:
 Email:
 
-Name:
+Name:Khem Raj  Joshi
 Roll no:ACE078BCT032
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Khem Raj  Joshi
 Roll no:ACE078BCT033
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Khem Raj  Joshi
 Roll no:ACE078BCT034
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Kiran  Acharya
 Roll no:ACE078BCT035
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Knowledge  Neupane
 Roll no:ACE078BCT036
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name: Kritika Aryal
 Roll no:ACE078BCT037
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Kritika sharma
 Roll no:ACE078BCT038
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Larisha  Lamichhane
 Roll no:ACE078BCT039
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Manish  Basnet
 Roll no:ACE078BCT040
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Mohit  Poudel
 Roll no:ACE078BCT041
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Niraaj  Shrestha
 Roll no:ACE078BCT042
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Nischal  Thapa
 Roll no:ACE078BCT043
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Prabesh Sagar Baral
 Roll no:ACE078BCT044
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Prajwol  Parajuli
 Roll no:ACE078BCT045
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Pralhad Raj Parajuli
 Roll no:ACE078BCT046
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name:Pranjal  Acharya
 Roll no:ACE078BCT047
 Semester:III
 Phone number:
 Email:
 
 
-Name:
+Name: Pratistha Gautam
 Roll no:ACE078BCT048
-Semester:III
-Phone number:
-Email:
-
-
-Name:
-Roll no:ACE078BCT049
-Semester:III
-Phone number:
-Email:
-
-
-Name:
-Roll no:ACE078BCT050
 Semester:III
 Phone number:
 Email:
