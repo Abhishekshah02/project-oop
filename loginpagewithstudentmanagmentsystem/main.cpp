@@ -376,17 +376,20 @@ void forget()
             if (lId == luserId)
             {
                 count = 1;
+                cout << "\n\n\n  Your account is found!! \n";
+            cout << "\n\n\n   Your password is: " << lpass << endl;
+            main();
             }
         }
         f2.close();
 
-        if (count == 1)
-        {
-            cout << "\n\n\n  Your account is found!! \n";
-            cout << "\n\n\n   Your password is: " << lpass << endl;
-            main();
-        }
-        else
+        if (count =!1)
+        // {
+        //     // cout << "\n\n\n  Your account is found!! \n";
+        //     // cout << "\n\n\n   Your password is: " << lpass << endl;
+        //     // main();
+        // }
+        // else
         {
             cout << "\n\n  Sorry!! Your account is not found!!";
         }
