@@ -2,27 +2,30 @@
 #include <fstream>
 #include <string.h>
 #include <conio.h>
+int C;
 using namespace std;
 class Student
 {
     string name, roll_no, semester, phone_no, email_id;
 
 public:
-    void menu();
+    void menuS();
+    void menuT();
     void insert();
     void display();
     void search();
 };
-void Student ::menu()
+
+void Student ::menuT()
 {
 menustart:
     int choice;
     char x, y;
     system("cls");
 
-    cout << "\t\t\t        _______________________________" << endl;
-    cout << "\n\t\t\t        |  STUDENT MANAGEMENT SYSTEM  |" << endl;
-    cout << "\t\t\t        _______________________________" << endl;
+    cout << "\t\t\t        _________________________" << endl;
+    cout << "\n\t\t\t        |  TEACHER'S PORTAL  |" << endl;
+    cout << "\t\t\t        _________________________" << endl;
 
     cout << "\t\t\t  1.Enter New record " << endl;
     cout << "\t\t\t  2.Display record" << endl;
@@ -37,6 +40,7 @@ menustart:
     case 1:
         do
         {
+            C = 1;
             insert();
             cout << "Do you want to insert more detail(Y/N)";
             cin >> x;
@@ -68,8 +72,55 @@ menustart:
     goto menustart;
 }
 
+void Student ::menuS()
+{
+menustart:
+    int choice;
+    char x, y;
+    system("cls");
+
+    cout << "\t\t\t           _______________________" << endl;
+    cout << "\n\t\t\t           |  STUDENT PORTAL  |" << endl;
+    cout << "\t\t\t           _______________________" << endl;
+
+    cout << "\t\t\t  1.Enter New record " << endl;
+    cout << "\t\t\t  2.Display record" << endl;
+    cout << "\t\t\t  3.Exit" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        do
+        {
+            C = 0;
+            insert();
+            cout << "Do you want to insert more detail(Y/N)";
+            cin >> x;
+        } while (x == 'y' || x == 'Y');
+        break;
+
+    case 2:
+        display();
+        break;
+
+    case 3:
+        exit(0);
+        break;
+
+    default:
+        cout << "\t\t\t Invalid choice.... Please Try Again..";
+    }
+    getch();
+
+    goto menustart;
+}
+
 void Student::insert()
-{   char x;
+{
+    char x;
     system("cls");
     fstream file;
     cout << "\n           _________________________________\n";
@@ -86,22 +137,27 @@ void Student::insert()
     cin >> phone_no;
     cout << "Enter Email ID: ";
     cin >> email_id;
-    file.open("student1.txt", ios::app | ios::out);  //new data is added at the end of the file without affecting the existing data.
+    file.open("student1.txt", ios::app | ios::out); // new data is added at the end of the file without affecting the existing data.
     file << " " << name << " " << roll_no << " " << semester << " " << phone_no << " " << email_id;
     file.close();
-    cout<<"Do you want to insert the data of more student(Y/N): ";
-    cin>>x;
-    if (x=='Y'||x=='y')
+    cout << "Do you want to insert the data of more student(Y/N): ";
+    cin >> x;
+    if (x == 'Y' || x == 'y')
     {
         insert();
-
     }
 
-    else{
-        menu();
+    else
+    {
+        if (C == 0)
+        {
+            menuS();
+        }
+        else
+        {
+            menuT();
+        }
     }
-
-    
 }
 void Student ::display()
 {
@@ -162,55 +218,56 @@ void registration();
 void forget();
 int main()
 {
+    Student s1;
     char a, b;
+    int count;
     std::cout << "Press S for student and T for teacher: ";
     cin >> a;
 
     if (a == 's' || a == 'S')
     {
-        
-            int c;
-            std::cout << "\t\t\t__________________________________________________________________________\n\n";
-            std::cout << "\t\t\t\t\t        WELCOME TO THE LOGIN PAGE             \n\n";
-            std::cout << "\t\t\t\t\t | PRESS 1 TO LOGIN                   |" << endl;
-            std::cout << "\t\t\t\t\t | PRESS 2 TO REGISTER                |" << endl;
-            std::cout << "\t\t\t\t\t | PRESS 3 IF YOU FORGET YOUR PASSWORD|" << endl;
-            std::cout << "\t\t\t\t\t | PRESS 4 TO EXIT                    |" << endl;
-            std::cout << "\t\t\t__________________________________________________________________________\n\n\n";
-            std::cout << " PLEASE ENTER YOUR CHOICE:      ";
-            cin >> c;
-            cout << endl;
 
-            switch (c)
-            {
-            case 1:
-                login();
-                break;
-            case 2:
-                registration();
-                break;
-            case 3:
-                forget();
-                break;
-            case 4:
-                std::cout << "\t\t\t Thank you  \n\n";
-                break;
-            default:
-                system("cls");
-                std::cout << "\t\t\t Please select from the the option given above  \n " << endl;
-                main();
-            }
-        
-       
+        int c;
+        std::cout << "\t\t\t__________________________________________________________________________\n\n";
+        std::cout << "\t\t\t\t\t        WELCOME TO THE LOGIN PAGE             \n\n";
+        std::cout << "\t\t\t\t\t | PRESS 1 TO LOGIN                   |" << endl;
+        std::cout << "\t\t\t\t\t | PRESS 2 TO REGISTER                |" << endl;
+        std::cout << "\t\t\t\t\t | PRESS 3 IF YOU FORGET YOUR PASSWORD|" << endl;
+        std::cout << "\t\t\t\t\t | PRESS 4 TO EXIT                    |" << endl;
+        std::cout << "\t\t\t__________________________________________________________________________\n\n\n";
+        std::cout << " PLEASE ENTER YOUR CHOICE:      ";
+        cin >> c;
+        cout << endl;
+
+        switch (c)
+        {
+        case 1:
+            login();
+            break;
+        case 2:
+            registration();
+            break;
+        case 3:
+            forget();
+            break;
+        case 4:
+            std::cout << "\t\t\t Thank you  \n\n";
+            break;
+        default:
+            system("cls");
+            std::cout << "\t\t\t Please select from the the option given above  \n " << endl;
+            main();
+        }
+        count = 0;
     }
     else if (a == 't' || a == 'T')
+
     {
         int d;
         std::cout << "\t\t\t _________________________________________________________________________\n";
         std::cout << "\t\t\t\t     WELCOME TO TEACHER LOGIN PAGE   \t\t\t\n";
         std::cout << "\t\t\t\t\t | PRESS 1 TO LOGIN                     |" << endl;
         std::cout << "\t\t\t\t\t | PRESS 2 TO REGISTER                  |" << endl;
-        std::cout << "\t\t\t\t\t | PRESS 3 TO SEE  THE DETAIL OF STUDENT|" << endl;
         std::cout << "\t\t\t__________________________________________________________________________\n\n\n";
         std::cout << " PLEASE ENTER YOUR CHOICE:      ";
         cin >> d;
@@ -229,10 +286,17 @@ int main()
         default:
             std::cout << "Please select from the the option given above  \n " << endl;
         }
+        count = 1;
     }
 
-     Student s1;
-        s1.menu();
+    if (count == 0)
+    {
+        s1.menuS();
+    }
+    else
+    {
+        s1.menuT();
+    }
 }
 
 void login()
