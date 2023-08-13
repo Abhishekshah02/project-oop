@@ -51,7 +51,7 @@ menustart:
         do
         {
             search();
-            cout << "Do you want to see the detail of more student(Y/N):";
+            cout << "\nDo you want to see the detail of more student(Y/N):";
             cin >> y;
         } while (y == 'Y' || y == 'y');
         break;
@@ -86,7 +86,7 @@ void Student::insert()
     cin >> phone_no;
     cout << "Enter Email ID: ";
     cin >> email_id;
-    file.open("student1.txt", ios::app | ios::out);
+    file.open("student1.txt", ios::app | ios::out);  //new data is added at the end of the file without affecting the existing data.
     file << " " << name << " " << roll_no << " " << semester << " " << phone_no << " " << email_id;
     file.close();
     cout<<"Do you want to insert the data of more student(Y/N): ";
