@@ -14,6 +14,8 @@ public:
     void insert();
     void display();
     void search();
+    void addassignment();
+    void viewassignment();
 };
 
 void Student ::menuT()
@@ -30,7 +32,8 @@ menustart:
     cout << "\t\t\t  1.Enter New record " << endl;
     cout << "\t\t\t  2.Display record" << endl;
     cout << "\t\t\t  3.Search record" << endl;
-    cout << "\t\t\t  4.Exit" << endl;
+    cout << "\t\t\t  4.Add Assignment" << endl;
+    cout << "\t\t\t  5.Exit" << endl;
 
     cout << "Enter your choice: ";
     cin >> choice;
@@ -61,6 +64,10 @@ menustart:
         break;
 
     case 4:
+        addassignment();
+        break;
+
+    case 5:
         exit(0);
         break;
 
@@ -85,7 +92,8 @@ menustart:
 
     cout << "\t\t\t  1.Enter New record " << endl;
     cout << "\t\t\t  2.Display record" << endl;
-    cout << "\t\t\t  3.Exit" << endl;
+    cout << "\t\t\t  3.View Assignment " << endl;
+    cout << "\t\t\t  4.Exit" << endl;
 
     cout << "Enter your choice: ";
     cin >> choice;
@@ -107,6 +115,10 @@ menustart:
         break;
 
     case 3:
+        viewassignment();
+        break;
+
+    case 4:
         exit(0);
         break;
 
@@ -211,6 +223,39 @@ void Student::search()
     }
 
     file.close();
+}
+
+  void Student:: addassignment()
+  { 
+    string Assignment;
+    ofstream A1("Assignmnet.txt", ios::app); // write in the file in the end without affecting the previous data.
+    cout<<"Create an assignment \n";
+    while(true)
+    {  
+        getline(cin, Assignment);
+
+        if(Assignment== "exit")
+        {
+            break;
+        }
+      A1 << Assignment << endl;
+    }
+   A1.close();
+
+}
+
+void Student:: viewassignment()
+{
+  string Assignment;
+  ifstream A1("Assignmnet.txt");
+  while (getline(A1,Assignment))
+  {
+    cout<<Assignment<<endl;
+    
+ }
+  A1.close();
+
+
 }
 
 void login();
@@ -344,7 +389,7 @@ void registration()
     cout << "\t\t\t  Enter the password: ";
     cin >> rpassword;
 
-    ofstream f1("student.txt", ios::app); // write in the file
+    ofstream f1("student.txt", ios::app); // write in the file in the end without affecting the previous data.
     f1 << ruserId << "  " << rpassword << endl;
     system("cls");
     cout << "\n\t\t\t REGISTRATION IS SUCESSFULL!!  \n";
@@ -377,19 +422,13 @@ void forget()
             {
                 count = 1;
                 cout << "\n\n\n  Your account is found!! \n";
-            cout << "\n\n\n   Your password is: " << lpass << endl;
-            main();
+                cout << "\n\n\n   Your password is: " << lpass << endl;
+                main();
             }
         }
         f2.close();
 
-        if (count =!1)
-        // {
-        //     // cout << "\n\n\n  Your account is found!! \n";
-        //     // cout << "\n\n\n   Your password is: " << lpass << endl;
-        //     // main();
-        // }
-        // else
+        if (count = !1)
         {
             cout << "\n\n  Sorry!! Your account is not found!!";
         }

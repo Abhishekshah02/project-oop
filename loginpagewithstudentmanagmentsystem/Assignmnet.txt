@@ -1,0 +1,5 @@
+instruction 
+a. who has scored less than 16 should do all the tutorial
+b. who has scored more than 16 should do t1 3 no, t2 3no, t3 3no.
+ 
+ Note: Get the tutorial from the classroom. 
